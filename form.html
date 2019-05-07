@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<h1><center>Car Booking</center></h1>
+<title>FORM</title>
+</head>
+<body>
+<form>
+<p>
+ <label> <h3>First Name: <input type= "text" name = "First Name" placeholder="Enter First Name"</h3></label>
+</p>
+
+<p>
+ <label> Last Name: <input type = "text" name = "Last Name" placeholder="Enter Last Name"></label>
+</p>
+
+<p>
+ <label> User Id    : <input type = "text" name =  "user Id" placeholder="Enter Your User Id"></label>
+</p>
+
+<p>
+ <label> Password   : <input type = "password" name = "password" placeholder="Enter Your Password"></label>
+</p>
+
+<fieldset>
+<legend>which taxi do you prefer?</legend>
+ <p> <label> <h4> <input type = "radio" name = "taxi" required value = "Uber">Uber </h4></label></p>
+ <p> <label> <h4> <input type = "radio" name = "taxi" required value = "Ola">Ola </h4></label></p>
+</fieldset>
+
+<fieldset>
+<legend>Extras</legend>
+<p><label><input type="radio" name="extras" value="baby"> Baby seat </label></p>
+<p><label><input type="radio" name="extras" value="wheel chair">wheel chair</label></p>
+</fieldset>
+
+<p>
+<label>Pickup Date/Time
+<input type="datetime-local" name="pickup_time" required>
+</label>
+</p>
+
+<p>
+<label>Pickup Place
+<select id="pickup_place" name="pickup_place">
+<option value="" selected="selected"> <right>Select One</right></option>
+<option value="office" >Taxi Office</option>
+<option value="town_hall" >Town Hall</option>
+
+</select>
+</label> 
+</p>
+
+<p>
+<label>Message
+<textarea name="Message" maxlength="500"></textarea>
+</label>
+</p>
+
+<p><button>Submit Booking</button></p>
+
+</form>
+</body>
+</html>
