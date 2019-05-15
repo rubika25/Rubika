@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="uber.css"/>
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css"/>
+  <link rel="stylesheet" href="timepicker/jquery.timepicker.css"/>
+
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <script type="text/javascript" src="timepicker/jquery.timepicker.js"></script>
+  >
+  <script type="text/javascript" src="validation.js"></script>
+
+
+
+
+</head>
+<body>
+	<header>
+   <div class="main-nav">
+    <nav>
+     <ul>
+       <a href="#Home">Home</a>
+       <a href="#Email">Email</a>
+       <a href="#About">About</a>
+       <a href="#Contact">Contact</a>
+     </div>
+   </ul>
+ </nav>
+</div>
+</header>
+
+
+<div class="main">
+
+  <div id="Home" class="page">
+    <h1>  <center> Welcome to Uber Bookings!!!</center> </h1>
+      <div class="row">
+        <div class="col col-xs-6">
+          <p><label>uberGO Hatchback cars qualify to drive with uberGO, the speedy, utilitarian and simple solution to get around quickly.The Uber app gives riders a quote for the fare before they commit to the ride.Uber uses a dynamic pricing model; prices for the same route vary based on the supply and demand for rides at the time the ride is requested.At the end of the ride, payment is made based on the rider's pre-selected preferences, which could be a credit card on file, Google Pay, Apple Pay, cash, or, in India, Airtel mobile wallet or Unified Payments Interface.After the ride is over, the rider is given the option to provide a gratuity to the driver, which is also billed to the rider's payment method.In some locations, if the driver has to wait more than a few minutes after arriving to the pickup location, riders are charged a wait time fee.
+          </label>
+        </p>
+      </div>
+      <div class="col col-xs-6"><p><label>uberGO Hatchback cars qualify to drive with uberGO, the speedy, utilitarian and simple solution to get around quickly.The Uber app gives riders a quote for the fare before they commit to the ride.Uber uses a dynamic pricing model; prices for the same route vary based on the supply and demand for rides at the time the ride is requested.At the end of the ride, payment is made based on the rider's pre-selected preferences, which could be a credit card on file, Google Pay, Apple Pay, cash, or, in India, Airtel mobile wallet or Unified Payments Interface.After the ride is over, the rider is given the option to provide a gratuity to the driver, which is also billed to the rider's payment method.In some locations, if the driver has to wait more than a few minutes after arriving to the pickup location, riders are charged a wait time fee.
+      </label>
+    </p>
+  </div>
+</div></div>
+
+
+<div id="Email" class="page">
+	<form onsubmit="return validate()">
+   <p><label>
+    Name:<br>
+    <input type = "text" id="name" name = "name" placeholder="Enter Your Name" required>
+    <br><span id="nameError" class="error"></span>
+  </label></p>
+</br>
+
+<p><label>
+ Email:<br>
+ <input type = "text" id ="email" name = "Email" required>
+ <br><span id="emailError" class="error"></span>
+</label></p>
+</br>
+
+<p><label>
+  Password:<br><input type = "Password"  id="pass" class="input" name = "Password" placeholder="Enter Your Password">
+  <br><span id="passError" class="error"> </span>
+</label></p>
+</br>
+
+<p><label>
+  Taxi:<br><input type = "radio" name = "taxi"  value = "UberX"><span>UberX</span><br>
+  <input type = "radio" name = "taxi"  value = "UberXL"><span>UberXL </span>
+</label></p>
+</br></br>
+
+<p><label>
+  Extras:<br><input type="checkbox" name="extras" value="baby"><span>Baby seat</span><br>
+  <input type="checkbox" name="extras" value="wheel chair"><span>wheel chair</span>
+</label></p>
+</br></br>
+
+<p><label>
+ Date:<br><input type="text"  id="tbdate" placeholder="enter date"></label></p>
+
+ <p><label>
+ Time:<br><input type="text" name="time" id="tbtime" placeholder="enter time"></label></p>
+
+  <p><label>
+    Mobile Number:<br><input type="Number" id="mobile" name="Mobile Number" placeholder="Enter Your Mobile Number" required>
+    <br><span id="mobileError" class="error"></span>
+  </label></p>
+</br>
+
+<p><label>
+  Pickup_place:<br><select id="pickup_place" class="input" name="pickup_place"><span>
+    <option value="" selected="selected"> Select One</option>
+    <option value="office" >Taxi Office</option>
+    <option value="town_hall" >Town Hall</option>
+  </select></span>
+</label></p>
+</br>
+
+<p><label>
+  Message:<br><textarea placeholder="message" class="input" name="Message" maxlength="500"></textarea>
+</label></p>
+</br>
+
+
+
+<div id="draggable" class="ui-widget-content">
+  <p>Drag me around</p>
+</div>
+ 
+<div id="droppable" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+<p><button class="input">Submit Booking</button>
+</form>
+</p></div>
+
+
+<div id="About" class="page">
+	<div class="row">
+   <div class="col col-xs-6">
+     <p><label>
+      Uber Technologies Inc. is a transportation network company (TNC) headquartered in San Francisco, California. Uber offers services including peer-to-peer ridesharing, ride service hailing, food delivery, and a bicycle-sharing system. The company has operations in 785 metropolitan areas worldwide.Its platforms can be accessed via its websites and mobile apps. Uber has been so prominent in the sharing economy that the changes in industries as a result of it have been referred to as uberisation, and many startups have described their products as "Uber for X". 
+    </label>
+  </p>
+</div>
+<div class="col col-xs-6">
+ <p><label>Uber Technologies Inc. is a transportation network company (TNC) headquartered in San Francisco, California. Uber offers services including peer-to-peer ridesharing, ride service hailing, food delivery, and a bicycle-sharing system. The company has operations in 785 metropolitan areas worldwide.Its platforms can be accessed via its websites and mobile apps. Uber has been so prominent in the sharing economy that the changes in industries as a result of it have been referred to as uberisation, and many startups have described their products as "Uber for X". 
+ </label>
+</p>
+</div>
+</div></div>
+
+
+<div class="page" id="Contact">
+	<p><label>
+    Name:<type = "text" name =  "Name" placeholder="Enter Your Name">
+    </label></p>
+    <br>
+
+    <p><label>
+     Email:<type = "text" name =  "Email" placeholder="Enter Your Email Id">
+     </label></p>
+     <br>
+
+     <p><label>
+      Message:<textarea placeholder="message" class="input" name="Message" maxlength="500"></textarea>
+    </label></p>
+    <br>
+
+    <p><label>
+    CONTACT NUMBER:9854587857</label>
+    <br>
+    <br>
+
+    <p><span>
+    ENQUIRY ANY HELP</span></p>
+  </div>
+</div>
+<footer><span>
+&copy; rubika </span>
+</footer>
+</body>
+</html>
