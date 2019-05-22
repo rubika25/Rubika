@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>operations</title>
+<script>
+
+ function sum(a,b)
+ {
+ return parseInt(a+b);
+ }
+ function avg(c,d)
+ {
+   return parseFloat(sum(c,d)/2);
+ }
+ function iszero(a)
+ {
+ if(a==0)
+ return true;
+ else
+ return false;
+ }
+ function isodd(b)
+ {
+ if(a%2!=0)
+ return true;
+ else
+ return false;
+ }
+ function getnumber() {
+  var n =prompt("enter the value");
+  return parseInt(n)
+ }
+ var a=getnumber();
+ var b=getnumber();
+ console.log(sum(a,b));
+ console.log(avg(a,b));
+ console.log(iszero(a));
+ console.log(isodd(b));
+ </script>
+ </head>
+ </html>

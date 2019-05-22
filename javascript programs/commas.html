@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>JavaScript function to print an integer with commas as thousands separators</title>
+<script>
+	function thousand()
+  {
+  	var num=document.querySelector("#num").value;
+  	if(/^(\+\d{1,3}[- ]?)?\d{1,20}$/.test(num)){
+    var num_parts = num.toString().split(".");
+    num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    console.log(num_parts.join("."));
+}
+else
+{
+	console.log("please enter a number");
+}
+    return false;
+  }
+</script>
+</head>
+<body>
+	<h1>enter number</h1>
+	<form onsubmit="return thousand();">
+    <input id="num" type="text">
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
